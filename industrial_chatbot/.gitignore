@@ -1,0 +1,14 @@
+# Secret files — NEVER upload these
+.env
+
+# ChromaDB local database (auto-generated, large)
+chroma_db/
+
+# Python cache files (auto-generated, not needed)
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+pdf_content.txt
