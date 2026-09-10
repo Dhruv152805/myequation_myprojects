@@ -1,0 +1,19 @@
+Validating: urdf/4dof_arm.urdf
+Links: 7   Joints: 6
+Revolute joints: 4
+Fixed joints:    2
+
+--- Kinematic tree ---
+- world
+  - base_link
+    - link1
+      - link2
+        - link3
+          - link4
+            - tool_link
+
+--- Errors ---
+  None. Structure is a valid single-root tree.
+
+--- Warnings ---
+  None.
