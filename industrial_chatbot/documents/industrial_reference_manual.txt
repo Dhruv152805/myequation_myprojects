@@ -1,0 +1,164 @@
+INDUSTRIAL SYSTEMS TECHNICAL REFERENCE MANUAL
+Version 3.2 | General Purpose Industrial Guide
+==============================================
+
+SECTION 1: BOILER SYSTEMS
+--------------------------
+1.1 Overview
+A boiler is a closed vessel in which fluid (generally water) is heated. The heated or vaporized fluid exits the boiler for use in various processes including heating, power generation, and sterilization.
+
+1.2 Types of Boilers
+- Fire-tube boilers: Hot gases pass through tubes surrounded by water. Used for low to medium pressure applications (up to 20 bar).
+- Water-tube boilers: Water passes through tubes surrounded by hot gases. Used for high pressure applications (up to 160 bar) and large capacities.
+- Electric boilers: Use electric resistance or immersion heating elements. Suitable for facilities with no gas supply.
+
+1.3 Key Parameters
+- Maximum Operating Pressure (MOP): 15 bar (fire-tube), 100 bar (water-tube)
+- Normal Operating Temperature: 100°C – 180°C for hot water; 120°C – 250°C for steam
+- Safety valve set pressure: Must not exceed 110% of MOP
+- Efficiency range: 80% – 95% for modern condensing boilers
+
+1.4 Safety Guidelines
+- Never operate above maximum rated pressure
+- Inspect water level gauge daily
+- Blow down the boiler weekly to remove sludge
+- Test safety valves monthly
+- Annual inspection by certified engineer is mandatory
+
+SECTION 2: HYDRAULIC SYSTEMS
+-----------------------------
+2.1 Overview
+Hydraulic systems use pressurized fluid to transmit power. They are used in heavy machinery, manufacturing presses, aircraft controls, and excavators.
+
+2.2 Components
+- Hydraulic Pump: Converts mechanical energy to hydraulic energy. Types: gear, vane, piston.
+- Hydraulic Cylinder: Converts hydraulic energy back to linear mechanical force.
+- Control Valves: Directional (to route flow), pressure (to limit pressure), flow (to regulate speed).
+- Reservoir: Stores hydraulic fluid, typically 2–3x the pump flow rate capacity.
+- Filters: Keep fluid clean. Replace when differential pressure exceeds 3.5 bar.
+
+2.3 Operating Specifications
+- System pressure range: 70 – 350 bar depending on application
+- Hydraulic fluid temperature: Max 60°C continuous, 80°C peak
+- Recommended fluid: ISO 46 mineral oil for most industrial applications
+- Flow rate: Measured in liters per minute (LPM)
+
+2.4 Maintenance Schedule
+- Daily: Check fluid level and look for leaks
+- Weekly: Check pump noise and system pressure
+- Monthly: Test safety relief valves; inspect hose fittings
+- 6 months: Change hydraulic fluid and filters
+- Annual: Full system inspection and pressure testing
+
+SECTION 3: ELECTRICAL SYSTEMS
+-------------------------------
+3.1 Motor Specifications
+Industrial AC motors are classified by their frame size (NEMA or IEC standards).
+- Single-phase motors: Up to 3 kW, used for small machines
+- Three-phase motors: 0.5 kW to several MW, most common in industry
+- Efficiency classes: IE1 (standard), IE2 (high), IE3 (premium), IE4 (super premium)
+
+3.2 Variable Frequency Drive (VFD)
+A VFD controls motor speed by adjusting the frequency and voltage of the power supply.
+Benefits:
+- Energy savings of 30–50% on fans and pumps
+- Soft start eliminates mechanical stress
+- Precise speed control
+
+VFD Parameters:
+- Input voltage: 380–480V three-phase
+- Output frequency range: 0–400 Hz
+- Protection: IP20 (indoor), IP54 (outdoor/dusty environments)
+
+3.3 Electrical Panel Safety
+- Always de-energize before working on panels (Lockout/Tagout procedure)
+- Use insulated tools rated for the working voltage
+- Minimum clearance in front of panels: 900mm
+- Arc flash boundary must be marked and PPE worn
+
+SECTION 4: PNEUMATIC SYSTEMS
+------------------------------
+4.1 Overview
+Pneumatic systems use compressed air to transmit power. Simpler and cleaner than hydraulics but limited to lower force applications.
+
+4.2 System Components
+- Air Compressor: Generates compressed air. Types: reciprocating, rotary screw, centrifugal.
+- Air Receiver Tank: Stores compressed air; provides surge capacity.
+- FRL Unit (Filter-Regulator-Lubricator): Conditions the air before use.
+- Pneumatic Actuators: Cylinders and rotary actuators for motion.
+- Solenoid Valves: Electrically controlled directional valves.
+
+4.3 Operating Specifications
+- Working pressure: 4–8 bar (typical industrial applications)
+- Air quality standard: ISO 8573-1 (Class 1: particles, moisture, oil)
+- Recommended pipe size: Based on flow rate and pressure drop calculations
+- Max velocity in pipes: 15 m/s to minimize pressure drop and noise
+
+4.4 Maintenance
+- Drain condensate from receiver tank daily
+- Clean or replace air filter element every 3 months
+- Check compressor oil level weekly (oil-lubricated compressors)
+- Leak detection survey quarterly (leaks can waste 20-30% of compressed air)
+
+SECTION 5: CONVEYOR SYSTEMS
+----------------------------
+5.1 Types of Conveyors
+- Belt conveyor: Most common, suitable for bulk materials and packaged goods
+- Roller conveyor: For boxes and pallets; gravity or motorized
+- Screw conveyor: For granular or semi-solid materials (grain, cement, sludge)
+- Chain conveyor: Heavy-duty applications, high-temperature environments
+
+5.2 Belt Conveyor Specifications
+- Belt speed: 0.5 – 3.5 m/s for most industrial applications
+- Maximum inclination: 20° for smooth belts; 30° for cleated belts
+- Belt tension: Must be checked and adjusted to prevent slippage
+- Load capacity: Calculated based on belt width, speed, and material density
+
+5.3 Safety Features
+- Emergency stop pull-cord along entire length
+- Belt misalignment switches (stop conveyor if belt drifts)
+- Speed monitoring relay (detect belt slip or jam)
+- Guard all nip points, pulleys, and drive mechanisms
+
+SECTION 6: INSTRUMENTATION & CONTROL
+--------------------------------------
+6.1 Common Sensors
+- Temperature: Thermocouple (Type K: -200°C to +1260°C), RTD (PT100: -200°C to +850°C)
+- Pressure: Bourdon tube gauges, piezoelectric transducers (0–1000 bar)
+- Flow: Electromagnetic (conductive liquids), ultrasonic (non-intrusive), Coriolis (mass flow)
+- Level: Float switches, ultrasonic level sensors, radar level transmitters
+
+6.2 PLC (Programmable Logic Controller)
+A PLC is an industrial computer used to automate processes.
+- Scan time: Typically 1–100ms
+- Programming languages (IEC 61131-3): Ladder Logic, Function Block Diagram, Structured Text
+- I/O types: Digital (24V DC), Analog (4–20mA, 0–10V)
+- Safety PLCs: SIL 2/3 rated for safety-critical applications
+
+6.3 SCADA Systems
+SCADA (Supervisory Control and Data Acquisition) provides remote monitoring and control.
+- Historian: Logs process data for trend analysis
+- HMI (Human-Machine Interface): Operator touchscreen displays
+- Alarm management: Priority levels 1 (emergency) to 4 (information)
+
+SECTION 7: SAFETY STANDARDS & REGULATIONS
+------------------------------------------
+7.1 Key Standards
+- ISO 45001: Occupational Health & Safety Management
+- IEC 61508: Functional Safety of Electrical/Electronic Systems
+- OSHA 1910.147: Lockout/Tagout (LOTO) procedures
+- NFPA 70E: Electrical safety in the workplace
+- EN ISO 13849: Safety of machinery — control systems
+
+7.2 Personal Protective Equipment (PPE)
+- Hard hat: Required in all areas with overhead hazards
+- Safety glasses: Required at all times in production areas
+- Steel-toed boots: Mandatory on all shop floors
+- Hearing protection: Required where noise exceeds 85 dB(A)
+- Arc flash suit: Required for electrical work above 50V
+
+7.3 Hazardous Area Classification
+- Zone 0: Explosive gas atmosphere present continuously
+- Zone 1: Explosive atmosphere likely in normal operation
+- Zone 2: Explosive atmosphere unlikely but possible
+- Equipment must be ATEX certified for Zones 0, 1, and 2
